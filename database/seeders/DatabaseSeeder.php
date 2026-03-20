@@ -25,6 +25,8 @@ class DatabaseSeeder extends Seeder
 
         $this->call([
             SkillSeeder::class,
+            AboutMeSeeder::class,
+            MediaSeeder::class,
         ]);
     }
 }
