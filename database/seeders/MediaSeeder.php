@@ -16,7 +16,7 @@ class MediaSeeder extends Seeder
         Media::query()->insert([
             [
                 'link' => 'https://www.linkedin.com/in/dariia-sliusar-640b6b329/',
-                'icon' => 'fab fa-linkedin-in',
+                'icon' => 'fa-brands fa-linkedin-in',
             ],
             [
                 'link' => 'https://github.com/DariiaSliusar',
