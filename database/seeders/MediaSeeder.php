@@ -13,7 +13,7 @@ class MediaSeeder extends Seeder
      */
     public function run(): void
     {
-        Media::query()->insert([
+        $medias = [
             [
                 'link' => 'https://www.linkedin.com/in/dariia-sliusar-640b6b329/',
                 'icon' => 'fa-brands fa-linkedin-in',
@@ -22,6 +22,10 @@ class MediaSeeder extends Seeder
                 'link' => 'https://github.com/DariiaSliusar',
                 'icon' => 'fa-brands fa-github',
             ],
-        ]);
+        ];
+
+        foreach ($medias as $media) {
+            Media::query()->create($media);
+        }
     }
 }

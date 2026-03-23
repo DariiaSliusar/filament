@@ -27,6 +27,8 @@ class DatabaseSeeder extends Seeder
             SkillSeeder::class,
             AboutMeSeeder::class,
             MediaSeeder::class,
+            EducationSeeder::class,
+            ExperienceSeeder::class,
         ]);
     }
 }
